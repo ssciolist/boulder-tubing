@@ -1,6 +1,6 @@
 class TubingPresenter
   def good_day?
-
+    TubingConditionsService.new.temp
   end
 
   def temperature
