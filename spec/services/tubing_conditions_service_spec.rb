@@ -7,7 +7,7 @@ describe 'TubingConditionsService' do
 
       response = TubingConditionsService.new
       expect(response.temp).to eq("59")
-      expect(response.weather_condition).to eq("Partly Cloudy")
+      expect(response.weather_condition).to eq("partly cloudy")
       expect(response.flow).to eq(129.0)
   end
 

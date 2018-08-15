@@ -4,7 +4,7 @@ class TubingConditionsService
   end
 
   def weather_condition
-    data[:weather_condition]
+    data[:weather_condition].downcase
   end
 
   def flow
@@ -12,7 +12,7 @@ class TubingConditionsService
   end
 
   def ideal_condition?
-    suitable_conditions.include?(weather_condition.downcase) ? true : false
+    suitable_conditions.include?(weather_condition) ? true : false
   end
 
   def suitable_conditions
