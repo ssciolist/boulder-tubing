@@ -1,1 +1,5 @@
 <h1>Is today a good day to go tubing in Boulder Creek?</h1>
+
+<h2><%= @tubing_presenter.good_day? %></h2>
+
+<p>It's <%= @tubing_presenter.temperature %> degrees, <%= @tubing_presenter.conditions %> and there's <%= @tubing_presenter.water_flow %> river flow for tubing</p>
