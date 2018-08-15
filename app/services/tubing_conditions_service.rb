@@ -11,6 +11,18 @@ class TubingConditionsService
     data[:flow_rate_cfs]
   end
 
+  def ideal_condition?
+  end
+
+  def suitable_conditions
+  end
+
+  def ideal_temp?
+  end
+
+  def ideal_flow?
+  end
+
   private
 
   def conn
